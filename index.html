@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+        <div class="container min">
+            <header class="parte1">
+                <H1 style="width: 500px; height: 60px;padding: 10px; background-color: gray; color: white; font-size: 40px; text-align: center;">Post </H1>
+            </header>
+            <section class="form">   
+                <input type="text" class="caja" id="titulo" placeholder="Título" required>
+                <input type="text" class="caja1" id="contenido" placeholder="Descripcion" required>
+                <button class="boton" onclick="registrar()">Agregar</button>
+            </section>
+        </div>
+        <div class="container max">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <h1 style="font-size: 30px;">Lista de Post</h1>
+                        <h1 style="font-size: 30px;">-------------</h1>
+                        <th>Título</th>
+                        <th>Descripción</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+                <tbody id="tbd"></tbody>
+            </table>
+        </div>
+        <script src="js/script.js"></script>
+</body>
+</html>
